@@ -1,3 +1,4 @@
+
 .s{
     background-color: slategray;
 }
@@ -38,6 +39,8 @@ h4{
 }
 .a{
     background-color: silver;
+    margin: 0;
+    padding: 0;
 }
 nav{
     padding: 25px;
@@ -92,4 +95,42 @@ a{
 }
 .t{
     margin-left: 250px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.flex > div{
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px){
+    .navbar a{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-q{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 1.5rem;
+    }
 }
